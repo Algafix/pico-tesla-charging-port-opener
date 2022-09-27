@@ -17,12 +17,12 @@ How to use
 Components
 ---
 
-    * Raspberry Pico
-    * 433.92 MHz transmitter for Europe (315 MHz for USA)
-        * FS1000A   - Meh, it may work or it may not, pray 
-        * STX882    - Much better option
-    * Antenna or 17 cm of wire [Optional]
-    * A way to connect everything
+* Raspberry Pico
+* 433.92 MHz transmitter for Europe (315 MHz for USA)
+    * FS1000A   - Meh, it may work or it may not, pray 
+    * STX882    - Much better option
+* Antenna or 17 cm of wire [Optional]
+* A way to connect everything
 
 Assembly
 ---
