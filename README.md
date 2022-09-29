@@ -64,7 +64,7 @@ Once we adjust the min and max power values, we can add an amplitude plot and ch
 Adjustments
 ===
 
-The transmitted signal should have a symbol period of 400us. This is indicated with micropython's call `sleep_us(400)`. However, due to delays in micropython or the cheap transmitter I'm using, I was getting pulses of 416us. Seems little but it's a huge difference after the 333 symbols of the signal, and it was not able to open the charging ports.
+The transmitted signal should have a symbol period of 400us. This is indicated with micropython's call `sleep_us(400)`. However, thats the time the sleep call will wait, we need to account too for the time it takes to execute the rest of the code. I was getting pulses of 416us so I just compensated for them. Seems little but it's a huge difference after the 333 symbols of the signal, and it was not able to open the charging ports.
 
 ![Samples too long](docs/samples_delayed.png)
 
@@ -72,4 +72,6 @@ Therefore, I changed the call to `sleep_us(384)` and it fixed the issue.
 
 ![Samples too long](docs/samples_corrected.png)
 
-You may need to play a bit with this parameter to make it work  `¯\_(ツ)_/¯`
+You may need to play a bit with this parameter to make it work if you change the code `¯\_(ツ)_/¯`.
+
+Better solutions could be implemented, like using the PIO framework. Maybe I'll do it in the future.
