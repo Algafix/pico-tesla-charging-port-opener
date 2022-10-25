@@ -1,7 +1,7 @@
 Raspberry pico - Tesla charging port opener
 ===
 
-Tesla's charging port signal has been known for years. There are several projects about how to retransmit it, how to sample it for HackRF or other SDR's and how to transmit it from a microcontroller or a Raspberry Pi. However, I couldn't find a micropython implementation.
+Tesla's charging port signal has been known for years. There are several projects about how to retransmit it, how to sample it for HackRF or other SDR's and how to retransmit it. However, I couldn't find a micropython implementation so I decided to have some fun.
 
 The signal has simple ASK/OOK modulation with 2.5 kHz of sample rate, easy enough to attempt a microcontroller micropython implementation.
 
@@ -40,6 +40,12 @@ Use
 ---
 
 You may connect the pico to your phone or get a battery for power on the go :)
+
+Here an example of a portable implementation using a Tiny2040.
+
+<p align="center">
+   <img src="docs/tiny_example.jpg" width="35%" height="35%" />
+</p>
 
 Note
 ---
