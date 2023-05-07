@@ -1,3 +1,7 @@
+
+[comment]: # (Author: Aleix)
+[comment]: # (Github: https://github.com/Algafix/)
+
 Raspberry pico - Tesla charging port opener
 ===
 
@@ -34,7 +38,12 @@ Assembly
 
 2. Flash the pico with micropython: [official documentation](https://www.raspberrypi.com/documentation/microcontrollers/micropython.html).
 
-3. Load the main.py file to the pico.
+3. Load the appropiate file:
+    * `main_pico.py` file for the __raspbery pico__.
+    * `main_tiny2040.py` file for the __tiny2040__.
+
+4. Rename to `main.py` for automatic execution.
+
 
 Use
 ---
@@ -44,13 +53,14 @@ You may connect the pico to your phone or get a battery for power on the go :)
 Here an example of a portable implementation using a Tiny2040.
 
 <p align="center">
-   <img src="docs/tiny_example.jpg" width="35%" height="35%" />
+   <img src="docs/front.jpg" height="35%" width="35%" />
+   <img src="docs/back.jpg"  height="35%" width="33.7%" />
 </p>
 
 Note
 ---
 
-The script blinks the led of the pico automatically. If you are using a Raspberry pico W change the Pin defnition accordignly ([link](https://forums.raspberrypi.com/viewtopic.php?t=336836)).
+The script blinks the led of the pico automatically. If you are using a __Raspberry pico W__ change the Pin defnition accordignly ([link](https://forums.raspberrypi.com/viewtopic.php?t=336836)).
 
 Results
 ===
